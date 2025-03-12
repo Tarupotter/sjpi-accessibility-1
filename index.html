@@ -41,10 +41,20 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 <body>
     <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
     <nav class="navigation">
-        <span class="nav-item" id="1" tabindex="-1"><a href="404.html" target="_blank">Home</a></span>
-        <span class="nav-item" id="1" tabindex="-1"><a href="404.html">World</a></span>
-        <span class="nav-item" id="1"><a href="404.html">Sports</a></span>
-        <span class="nav-item" id="1"><a href="404.html" target="_blank">Entertainment</a></span>
+        <ul>
+            <li class="nav-item" id="home">
+                <a href="404.html" target="_blank" aria-label="Go to Home page">Home</a>
+            </li>
+            <li class="nav-item" id="world">
+                <a href="404.html" aria-label="Go to World page">World</a>
+            </li>
+            <li class="nav-item" id="sports">
+                <a href="404.html" aria-label="Go to Sports page">Sports</a>
+            </li>
+            <li class="nav-item" id="entertainment">
+                <a href="404.html" target="_blank" aria-label="Go to Entertainment page">Entertainment</a>
+            </li>
+        </ul>
     </nav>
 
     <!-- Svåråtkomligt inputfällt -->

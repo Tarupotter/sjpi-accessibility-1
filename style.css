@@ -71,26 +71,25 @@ a {
 }
 
 /* Navigeringsmeny med mörk bakgrund och jämnt fördelade element */
-.navigation {
-  background-color: #3b3b3b;
-  padding: 30px;
+.navigation ul {
   display: flex;
-  justify-content: space-between;
+  list-style: none;
+  justify-content: center;
   font-size: 40px;
-  font-weight: bold;
+  margin-top: 3rem;
 }
 
 /* Navigeringslänkar */
-.navigation .nav-item a {
-  color: #ffffff;
-  padding: 10px;
-  text-decoration: none;
+.navigation li {
+  margin-left: 10rem;
+}
+
+.navigation li a:hover {
+  color:#6c6c6c;
 }
 
 /* Bakgrundsfärg vid hover på navigationslänkar */
-.navigation .nav-item:hover a {
-  background-color: #acacac40;
-}
+
 
 /* Bilderna placeras i en rad, centrerar dem horisontellt och vertikalt och lägger till ett mellanrum mellan bilderna */
 .image-container {
