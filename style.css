@@ -18,6 +18,10 @@ body {
   text-shadow: 5px 5px 10px black;
 }
 
+header {
+  height: 100px;
+}
+
 /* Tar bort understrykning på länkar och ändrar färg */
 a {
   color: #f5f5dc;

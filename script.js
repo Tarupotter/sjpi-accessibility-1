@@ -12,11 +12,6 @@ document.write("<p>Another document.write() call</p>")
 history.pushState(null, "", location.href)
 window.onpopstate = () => history.go(1)
 
-// Ändrar bakgrundsfärgen slumpmässigt var 500ms
-setInterval(() => {
-  document.body.style.backgroundColor =
-    "#" + Math.floor(Math.random() * 16777215).toString(16)
-}, 500)
 
 // Visar innehållet på sidan efter 5 sekunder
 setTimeout(() => {
