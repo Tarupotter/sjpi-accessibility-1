@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Tungläst typsnitt */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /* Tungläst typsnitt */
 }
 
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
@@ -22,6 +22,10 @@ header {
   height: 100px;
 }
 
+h1{
+  font-size: 2rem;
+  text-align: center;
+}
 /* Tar bort understrykning på länkar och ändrar färg */
 a {
   color: #f5f5dc;
@@ -35,17 +39,10 @@ a {
   font-size: 50px;
   padding: 20px;
   border: 5px dashed black;
-  cursor: not-allowed;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
-/* Nästan osynlig text, spegelvänd */
-.hidden-text {
-  display: block;
-  opacity: 0.1;
-  font-size: 50px;
-  transform: rotate(180deg);
-}
 
 /* En behållare med mittjusterad text och en blå transparent bakgrund */
 .container {
