@@ -19,7 +19,8 @@ body {
 }
 
 header {
-  height: 100px;
+  height: 200px;
+  background-color: black;
 }
 
 h1{
@@ -49,7 +50,6 @@ a {
   width: 100%;
   margin: auto;
   border: 10px solid pink;
-  background-color: rgba(0, 0, 255, 0.2);
   text-align: center;
 }
 
@@ -58,7 +58,6 @@ a {
   border-bottom: 10px dotted orange;
   margin-bottom: 50px;
   padding-bottom: 50px;
-  background: radial-gradient(circle, black, transparent);
 }
 
 
@@ -78,12 +77,12 @@ a {
   list-style: none;
   justify-content: center;
   font-size: 40px;
-  margin-top: 3rem;
 }
 
 /* Navigeringslänkar */
 .navigation li {
   margin-left: 10rem;
+  margin-top: 5rem;
 }
 
 .navigation li a:hover {
@@ -112,35 +111,27 @@ a {
 .input-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 /* Inputfält med röd text och svart ram */
 .input-container input {
   font-size: 1.5rem;
-  width: 20rem;
-  height: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 30rem;
+  height: 2.5rem;
   padding: 1rem;
-  text-align: right;
   background-color: rgb(255, 255, 255);
-  color: red;
 }
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
-  background-color: rgb(61, 60, 60);
+  border-radius: 0.5rem;
   font-size: 1rem;
   width: 5rem;
-  height: 2.1rem;
+  height: 2.5rem;
   padding: 10px;
-  cursor: pointer;
-}
-
-/* En knapp med blå bakgrund och vit text */
-.button {
-  display: inline-block;
-  padding: 10px;
-  background-color: blue;
-  color: white;
   cursor: pointer;
 }
 
