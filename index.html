@@ -79,15 +79,15 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         </div>
 
         <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
-        <div class="article" onclick="alert('This does nothing!')">
-            <div>Lunar New Year: Celebrate with us!</div>
+        <div class="article">
+            <h2>Lunar New Year: Celebrate with us!</h2>
 
             <!-- Bilder visas inte, varför? -->
-            <div class="image-container">
-                <img src="/images/ocean.jpg">
-                <img src="/images/city.jpg">
-                <img src="/images/family.jpg">
-            </div>
+           <div class="image-container">
+                <img src="/images/ocean.jpg" alt="picture of the ocean">
+                <img src="/images/City.jpg" alt="picture of a city">
+                <img src="/images/family.png" alt="Picture of a family">
+            </div> 
 
             <p>Access the news by pressing the images</p>
         </div>
@@ -95,7 +95,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
         <div class="article">
             <p class="headline">Se en 50MB bild ladda långsamt!</p>
-            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500" alt="picture of a flower">
         </div>
 
         <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
@@ -109,11 +109,11 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <div id="fake-ad">
         <div class="top-section">
             <div class="image-container">
-                <img class="rotating-image" src="images/chest.png">
+                <img class="rotating-image" src="images/chest.png" alt="chest">
             </div>
             <p>🎉 You have won $10,000! 🎉</p>
             <div class="image-container">
-                <img class="rotating-image" src="images/chest.png">
+                <img class="rotating-image" src="images/chest.png" alt="chest">
             </div>
         </div>
         <p class="btext">Click here to collect your money!</p>

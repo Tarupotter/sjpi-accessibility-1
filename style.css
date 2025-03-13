@@ -60,6 +60,16 @@ a {
   padding-bottom: 50px;
 }
 
+.article h2 {
+  text-align: center;
+  margin: 4rem;
+}
+
+.article p {
+  text-align: center;
+  margin: 2rem;
+}
+
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
 .headline {
@@ -97,13 +107,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5rem;
 }
 
 /* Definierar storleken på bilderna och gör att de täcker det angivna utrymmet utan att bli förvrängda  */
 .image-container img {
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem; 
   object-fit: cover;
 }
 
