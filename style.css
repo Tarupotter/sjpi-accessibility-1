@@ -23,6 +23,10 @@ header {
   background-color: black;
 }
 
+.logo {
+  font-size: 3rem;
+}
+
 h1{
   font-size: 2rem;
   text-align: center;
@@ -31,26 +35,6 @@ h1{
 a {
   color: #f5f5dc;
   text-decoration: none;
-}
-
-/* Stilar för en knapp-liknande div, men "not-allowed" cursor gör att den ser inaktiv ut */
-.button {
-  background-color: magenta;
-  color: cyan;
-  font-size: 50px;
-  padding: 20px;
-  border: 5px dashed black;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-
-/* En behållare med mittjusterad text och en blå transparent bakgrund */
-.container {
-  width: 100%;
-  margin: auto;
-  border: 10px solid pink;
-  text-align: center;
 }
 
 /* Artikel med prickad orange linje och en radial gradient som bakgrund */
@@ -75,7 +59,7 @@ a {
 .headline {
   font-size: 80px;
   font-weight: lighter;
-  color: #8d0801;
+  color: #060606;
   text-align: right;
   margin: 50px;
   padding: 20px;
