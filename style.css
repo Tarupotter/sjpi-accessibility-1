@@ -39,9 +39,10 @@ a {
 
 /* Artikel med prickad orange linje och en radial gradient som bakgrund */
 .article {
-  border-bottom: 10px dotted orange;
+  border-bottom: 0.2rem solid rgb(253, 251, 251);
   margin-bottom: 50px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .article h2 {
@@ -51,7 +52,9 @@ a {
 
 .article p {
   text-align: center;
-  margin: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -83,7 +86,20 @@ a {
   color:#6c6c6c;
 }
 
-/* Bakgrundsfärg vid hover på navigationslänkar */
+.hidden {
+  display: none;
+}
+
+#readMoreLink {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#readMoreLink:hover {
+  text-decoration: underline;
+}
 
 
 /* Bilderna placeras i en rad, centrerar dem horisontellt och vertikalt och lägger till ett mellanrum mellan bilderna */
