@@ -11,11 +11,9 @@ body {
   background: #6c6c6c;
   color: #f5f5dc;
   font-size: 30px;
-  text-align: left;
-  letter-spacing: 5px;
-  word-spacing: 15px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
   line-height: 1.2em;
-  text-shadow: 5px 5px 10px black;
 }
 
 header {
@@ -31,6 +29,7 @@ h1{
   font-size: 2rem;
   text-align: center;
 }
+
 /* Tar bort understrykning på länkar och ändrar färg */
 a {
   color: #f5f5dc;
@@ -60,10 +59,9 @@ a {
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
 .headline {
-  font-size: 80px;
-  font-weight: lighter;
+  font-size: 4rem;
+  font-weight:normal;
   color: #060606;
-  text-align: right;
   margin: 50px;
   padding: 20px;
 }
