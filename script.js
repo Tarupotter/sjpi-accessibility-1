@@ -7,5 +7,4 @@ const toggleText = () => {
   readMoreLink.textContent = isHidden ? "Read less" : "Continue reading";
 };
 
-readMoreLink.addEventListener("click", toggleText);
-
+readMoreButton.addEventListener("click", toggleText);

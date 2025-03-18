@@ -33,6 +33,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A news site">
     <link rel="stylesheet" href="style.css">
     <!-- Endast en `<title>` används; flera kan orsaka oväntat beteende och påverka SEO samt tillgänglighet negativt. -->
     <title>Ally News</title>
@@ -40,7 +41,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
 <body>
     <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
-   
+   <div class="content">
    <header>
     <div class="logo">
         <a href="index.html">ALLY NEWS</a>
@@ -72,7 +73,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
 
-        <div class="article">
+        <article class="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
             <h2 class="headline">Breaking News:</h2>
             <p id="text">
@@ -81,36 +82,47 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
                 The unnamed species is believed to have unique traits that could contribute to future medical research and biotechnology.
                 </span>
               </p>
-              <a href="javascript:void(0);" id="readMoreLink">Continue reading</a>
+              <button id="readMoreButton">Continue reading</button>
                 
-        </div>
+            </article>
 
         <!-- Klicka på artikeln för att visa ett meddelande, men den utför egentligen inget. -->
-        <div class="article">
-            <h2>Lunar New Year: Celebrate with us!</h2>
+        <article class="article">
+            <h2 class="headline">Do you want to live a happy life?</h2>
 
             <!-- Bilder visas inte, varför? -->
            <div class="image-container">
-                <img src="/images/ocean.webp" width="500" height="300" alt="picture of the ocean">
-                <img src="/images/City.webp" width="500" height="300" alt="picture of a city">
-                <img src="/images/family.webp" width="500" height="300" alt="Picture of a family">
-            </div> 
+                <img src="/images/ocean.webp" width="300"  alt="picture of the ocean">
+                <img src="/images/City.webp" width="300"  alt="picture of a city">
+                <img src="/images/family.webp" width="300"  alt="Picture of a family">
+           </div> 
 
-            <p>Access the news by pressing the images</p>
-        </div>
+            <p>Pro tip: Spend time outdoors, travel to different cities, and work out with your family!</p>
+        </article>
 
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
-        <div class="article">
-            <p class="headline">Se en 50MB bild ladda långsamt!</p>
-            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500" alt="picture of a flower">
+        <article class="article">
+            <div>
+            <h2 class="headline">Beautiful flowers for your summer wedding</h2>
+            <img src="/images/flowers.png" width="500" alt="picture of a flower">
+            <img src="/images/flowers2.png" width="500" alt="picture of a flower">
         </div>
+            <a href="https://www.interflora.se/"> click here to buy these bouquets</a>
+            
+        </article>
 
         <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
-        <div class="article">
-            <video autoplay muted loop src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-            <img src="https://abcnews4.com/resources/media2/16x9/full/1024/center/80/2fa52e16-9e69-42f7-80a1-1874398ea961-large16x9_ForrestGump.png"alt="Tom waving" width="500" height="300">
-        </div>
-    </div>
+        <article class="article">
+            <h2 class="headline">NHL star Gabriel Landeskog is moving back to Sweden</h2>
+            <p id="text">Hockey star Gabriel Landeskog is returning to Sweden after a successful career in the NHL. 
+                The Swedish forward, who has been a key player for the Colorado Avalanche for over a decade, has decided to move back to his home country. 
+                Landeskog, known for his leadership and physical style of play, captained the Avalanche to their first Stanley Cup victory in over 20 years in 2022. 
+                His decision to return to Sweden marks the end of an era in the NHL for the talented player, who has become one of the most recognizable Swedish hockey players in the league. 
+                Fans and teammates alike are sure to miss his presence on the ice, but Landeskog’s return to Sweden is seen as a new chapter in his life, both on and off the ice. 
+                While his playing career in North America may be over, 
+                his legacy in the NHL remains strong, and he will undoubtedly continue to inspire the next generation of hockey players.</p>
+        </article>
+   
 
     <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
     <div id="fake-ad">
@@ -126,7 +138,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <a href="joke.html" class="btext">Click here to collect your money!</p>
     </div>
 
-
+</div>
     <script src="script.js" defer></script>
 </body>
 

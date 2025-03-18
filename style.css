@@ -6,23 +6,56 @@
 
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
 body {
-  margin-right: 15rem;
-  margin-left: 15rem;
-  background: #6c6c6c;
-  width: 80%;
-  color: #f5f5dc;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: radial-gradient(circle, #add8e6, rgba(173, 216, 230, 0));
+  width: 60%;
+  color: #000000;
   font-size: 30px;
   line-height: 1.2em;
 }
 
+.content {
+  background-color: white;
+}
+
 header {
-  height: 200px;
-  background-color: black;
+width: 100%;
+max-width: 100%;
+padding: 10px;          
+box-sizing: border-box;
+background-color: #add8e6;
 }
 
 .logo {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+ padding: 2rem;
 }
+
+.logo a {
+  border: 0.2rem dotted #000000;
+  padding: 0.5rem;
+}
+
+/* Navigeringsmeny med mörk bakgrund och jämnt fördelade element */
+.navigation{
+  display: flex;
+  justify-content: center;
+  }
+  
+  .navigation ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 2rem;
+    width: 90%;
+  }
+  
+  .navigation li a:hover {
+    color:#6c6c6c;
+  }
 
 h1{
   font-size: 2rem;
@@ -31,13 +64,13 @@ h1{
 
 /* Tar bort understrykning på länkar och ändrar färg */
 a {
-  color: #f5f5dc;
+  color: #000000;
   text-decoration: none;
 }
 
 /* Artikel med prickad orange linje och en radial gradient som bakgrund */
 .article {
-  border-bottom: 0.2rem solid rgb(253, 251, 251);
+  border-bottom: 0.2rem solid rgb(0, 0, 0);
   margin-bottom: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -49,37 +82,25 @@ a {
 }
 
 .article p {
-  text-align: center;
+  text-align: justify;
   margin-left: 15rem;
   margin-right: 15rem;
   margin-bottom: 2rem;
 }
 
+#readMoreButton {
+  background: none;
+  font-size: 1.1rem;
+  height: 3rem;
+  width: 12rem;
+  border-color: #000000;
+}
 
 /* Rubrik med stor text och mörkröd färg, justerad till höger */
 .headline {
-  font-size: 4rem;
-  font-weight:normal;
-  color: #060606;
+  font-size: 3rem;
   margin: 50px;
   padding: 20px;
-}
-
-/* Navigeringsmeny med mörk bakgrund och jämnt fördelade element */
-.navigation ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  font-size: 40px;
-}
-
-/* Navigeringslänkar */
-.navigation li {
-  margin: 4rem 6rem 0rem 6rem;
-}
-
-.navigation li a:hover {
-  color:#6c6c6c;
 }
 
 .hidden {
@@ -100,18 +121,12 @@ a {
 
 /* Bilderna placeras i en rad, centrerar dem horisontellt och vertikalt och lägger till ett mellanrum mellan bilderna */
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
+  max-width: 100%;
 }
 
-/* Definierar storleken på bilderna och gör att de täcker det angivna utrymmet utan att bli förvrängda  */
-/*.image-container img {
-  width: 15rem;
-  height: 15rem; 
-  object-fit: cover;
-}*/
+.image-container img {
+height: 12rem;
+}
 
 /* Input-fält i en container med kolumnlayout och flytande positionering */
 .input-container {
@@ -124,27 +139,24 @@ a {
 /* Inputfält med röd text och svart ram */
 .input-container input {
   font-size: 1.5rem;
-  border-radius: 0.5rem;
-  border: none;
-  width: 30rem;
-  height: 2.5rem;
+  width: 40rem;
+  height: 3rem;
   padding: 1rem;
   background-color: rgb(255, 255, 255);
 }
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
 .input-container button {
-  border-radius: 0.5rem;
   font-size: 1rem;
   width: 5rem;
-  height: 2.5rem;
+  height: 3rem;
   padding: 10px;
+  margin-left: 0.3rem;
   cursor: pointer;
 }
 
 /* En "fake ad" med blinkande bakgrund och fast position längst ner */
 #fake-ad {
-  width: 30%;
   background: black;
   text-align: center;
   font-size: 24px;
@@ -157,19 +169,4 @@ a {
   align-items: center;
   justify-content: center;
 }
-
-/* Text med en hover-effekt som drastiskt krymper storleken */
-.btext {
-  font-size: 18px;
-  padding: 10px 15px;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-/* På hover minskas texten kraftigt, nästan osynlig */
-.btext:hover {
-color: #6c6c6c;
-}
-
-
 
