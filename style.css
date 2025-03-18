@@ -57,6 +57,34 @@ background-color: #add8e6;
     color:#6c6c6c;
   }
 
+  /* Input-fält i en container med kolumnlayout och flytande positionering */
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+/* Inputfält med röd text och svart ram */
+.input-container input {
+  font-size: 1.5rem;
+  width: 40rem;
+  height: 3rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Knapp med rosa kant, mörkröd bakgrund och roterad */
+.input-container button {
+  font-size: 1rem;
+  width: 5rem;
+  height: 3rem;
+  padding: 10px;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
 h1{
   font-size: 2rem;
   text-align: center;
@@ -78,7 +106,10 @@ a {
 
 .article h2 {
   text-align: center;
-  margin: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .article p {
@@ -94,13 +125,6 @@ a {
   height: 3rem;
   width: 12rem;
   border-color: #000000;
-}
-
-/* Rubrik med stor text och mörkröd färg, justerad till höger */
-.headline {
-  font-size: 3rem;
-  margin: 50px;
-  padding: 20px;
 }
 
 .hidden {
@@ -126,33 +150,6 @@ a {
 
 .image-container img {
 height: 12rem;
-}
-
-/* Input-fält i en container med kolumnlayout och flytande positionering */
-.input-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-/* Inputfält med röd text och svart ram */
-.input-container input {
-  font-size: 1.5rem;
-  width: 40rem;
-  height: 3rem;
-  padding: 1rem;
-  background-color: rgb(255, 255, 255);
-}
-
-/* Knapp med rosa kant, mörkröd bakgrund och roterad */
-.input-container button {
-  font-size: 1rem;
-  width: 5rem;
-  height: 3rem;
-  padding: 10px;
-  margin-left: 0.3rem;
-  cursor: pointer;
 }
 
 /* En "fake ad" med blinkande bakgrund och fast position längst ner */
