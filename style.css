@@ -1,18 +1,17 @@
 /* Återställer standardmarginaler/padding och använder border-box för att inkludera padding i elementets storlek */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif /* Tungläst typsnitt */
 }
 
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
 body {
+  margin-right: 15rem;
+  margin-left: 15rem;
   background: #6c6c6c;
+  width: 80%;
   color: #f5f5dc;
   font-size: 30px;
-  letter-spacing: 2px;
-  word-spacing: 1px;
   line-height: 1.2em;
 }
 
@@ -109,11 +108,11 @@ a {
 }
 
 /* Definierar storleken på bilderna och gör att de täcker det angivna utrymmet utan att bli förvrängda  */
-.image-container img {
+/*.image-container img {
   width: 15rem;
   height: 15rem; 
   object-fit: cover;
-}
+}*/
 
 /* Input-fält i en container med kolumnlayout och flytande positionering */
 .input-container {
@@ -146,7 +145,7 @@ a {
 
 /* En "fake ad" med blinkande bakgrund och fast position längst ner */
 #fake-ad {
-  width: 40%;
+  width: 30%;
   background: black;
   text-align: center;
   font-size: 24px;
@@ -166,22 +165,12 @@ a {
   padding: 10px 15px;
   margin-top: 10px;
   font-weight: bold;
-  transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out,
-    padding 0.5s ease-in-out;
 }
 
 /* På hover minskas texten kraftigt, nästan osynlig */
 .btext:hover {
-  transform: scale(0.1);
-  font-size: 1px;
-  padding: 1px;
+color: #6c6c6c;
 }
 
-/* Bild som roterar mellan -45 och 45 grader */
-.rotating-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
+
 

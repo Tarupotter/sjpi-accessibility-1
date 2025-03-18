@@ -8,3 +8,4 @@ const toggleText = () => {
 };
 
 readMoreLink.addEventListener("click", toggleText);
+
